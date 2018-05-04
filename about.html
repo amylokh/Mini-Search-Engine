@@ -1,0 +1,146 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>The Mini-Search Engine</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="shortcut icon" href="favicon.png">
+		
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="index.html" class="logo">Home</a>
+					<nav id="nav">
+						<a href="event.html">Events</a>
+						<a href="workshop.html">Recent News</a>
+						<a href="seminar.html">Seminars</a>
+						<a href="contact.html">Contact</a>
+					</nav>
+					<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+				</div>
+			</header>
+
+		<!-- Banner -->
+			<section id="banner">
+				<h1>The Mini Search Engine</h1>
+				<p>the fastest search engine</p>
+			</section>
+
+		<!-- One -->
+			<section id="one" class="wrapper">
+				<div class="inner">
+					<div class="flex flex-2">
+						<article>
+							<header>
+								<h3><span style="font-weight:bold;">About<br/>The Mini Search Engine</span></h3>
+							</header>
+							<p align="justify"><strong>Search engines are the key to finding specific information on the vast expanse of the World Wide Web. Without sophisticated search engines, it would be virtually impossible to locate anything on the Web without knowing a specific URL. We intend to create a simple yet very powerful and fast search engine.The Mini-Search Engine that is used to search through a database which is specially designed for this Search Engine. The database is used to store the information regarding the sites, video, audio, images and user. The database contains tables which contains the data and the tables are related to each other..</strong></p>
+						</article>
+						<article>
+							<header>
+								<h3><span style="font-weight:bold;">About<br/>Overview</span></h3>
+							</header>
+							<p align="justify"><strong>First, we designed the Graphical User Interface (GUI) for our Search Engine. The page was mainly based on html and php coding. The php coding was used to link the interface with the Database. Various queries are performed when the user searches for a particular keyword. For the design of the database we studied various literatures and discussed on it. We developed various relations between the tables and discussed about the constraints which should be applied to the attributes. Then we constructed the tables with the specified attributes. We inserted the data which we considered somewhat related to our project into the database. We added some new attributes later which enhanced the working of Search Engine. Also we applied various methods to reduce data redundancy and data inconsistency. And finally we did the testing of our Mini-Search Engine</strong></p>
+						</article>
+
+					</div>
+				</div>
+			</section>
+
+
+		<!-- Two -->
+			<section id="two" class="wrapper style1 special">
+				<div class="inner">
+					<header>
+						<h2>Team Members</h2>
+						<p>The hard work of Amey is in front of you</p>
+					</header>
+					<div class="flex flex-3">
+						<div class="box person">
+							<div class="image round">
+								<img src="images/amy.jpg" height = 160px width = 160px alt="Person 1" />
+							</div>
+							<h3>Amey Lokhande</h3>
+							<p>Student | VIT UNIVERSITY</p>
+						</div>
+						<div class="box person">
+							<div class="image round">
+								<img src="images/yash.jpg" height = 160px width = 160px alt="Person 3" />
+							</div>
+							<h3>Yashaswi Soni</h3>
+							<p>Student | VIT UNIVERSITY</p>
+						</div>
+						<div class="box person">
+							<div class="image round">
+								<img src="images/rac.jpg" height = 160px width = 160px alt="Person 4" />
+							</div>
+							<h3>Rachit Katyal</h3>
+							<p>Student | VIT UNIVERSITY</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		<!-- Three -->
+			<section id="three" class="wrapper special">
+				<div class="inner">
+					<header class="align-center">
+						<h2><span style="font-weight:bold";>The Mini Search Engine</span></h2>
+					</header>
+											<article>
+							<div class="image fit">
+								
+							</div>
+							<header>
+								<h3 align="center">For the Students. By the Students. With The Students.</h3>
+							</header>
+							<p align="justify"><strong>‘Mini-Search Engine’ has been developed and working properly without any errors in it. There are a few limitations to this project such as the number of results depends on the data present in our database. 
+							If the number of results are increased, the size of the database will increase and it will not be feasible to maintain it. </strong></p>
+							<footer id="demo">
+								<p align="center"><a href="contact.html"><button class="button special" target="_blank" onclick= "loadDoc()">Contact Us</button></a></p>
+							</footer>
+						</article>
+					</div>
+				</div>
+			</section>
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<div class="flex">
+						<div class="copyright">
+							<strong>&copy;Copyright Amey Lokhande| 2017</strong>
+						</div>
+						<ul class="icons">
+							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon fa-linkedin"><span class="label">linkedIn</span></a></li>
+							<li><a href="#" class="icon fa-pinterest-p"><span class="label">Pinterest</span></a></li>
+							<li><a href="#" class="icon fa-vimeo"><span class="label">Vimeo</span></a></li>
+						</ul>
+					</div>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+<script>
+function loadDoc() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("demo").innerHTML = this.responseText;
+    }
+  };
+  xhttp.open("GET","contact.txt", true);
+  xhttp.send();
+}
+</script> 
+	</body>
+</html>
